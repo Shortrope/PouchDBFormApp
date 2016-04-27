@@ -1,0 +1,40 @@
+doctype.html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title pouch_form_app
+    link(rel="stylesheet", href="css/style.css")
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    script(src="js/jquery-2.2.2.min.js")
+    script(src="js/pouchdb-5.3.1.min.js")
+    script(src="js/script.js")
+  body
+    h1 PouchDB Form App
+    form(method="get")
+      label
+        i First Name:
+        input(type="text",id="fname")
+      label
+        i Last Name:
+        input(type="text",id="lname")
+      label
+        i Email:
+        input(type="email",id="email")
+      label
+        i Phone:
+        input(type="tel",id="phone")
+      label
+        i Subject:
+        input(type="text",id="subject")
+      label(for="message")
+        i Message:
+        textarea(id="message")
+      input(type="submit",id="submit-btn")
+
+    div(id="results")

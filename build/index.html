@@ -1,0 +1,68 @@
+<!DOCTYPE .html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>pouch_form_app</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/pouchdb-5.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>PouchDB Form App</h1>
+      </div>
+      <div role="main" class="ui-content"><a href="#add" class="ui-btn">Add</a><a href="#admin" class="ui-btn">Admin</a></div>
+      
+    </div>
+    <div data-role="page" id="add">
+      <div data-role="header" data-add-back-btn="true">
+        <h1>Add Data to DB</h1>
+      </div>
+      <div role="main" class="container ui-content">
+        <form method="get">
+          <label for="fname"><i>First Name:</i></label>
+          <input type="text" id="fname" required="required"/>
+          <label for="lname"><i>Last Name:</i></label>
+          <input type="text" id="lname" required="required"/>
+          <label for="email"><i>Email:</i></label>
+          <input type="email" id="email" required="required"/>
+          <label for="phone"><i>Phone:</i></label>
+          <input type="tel" id="phone"/>
+          <label for="subject"><i>Subject:</i></label>
+          <input type="text" id="subject"/>
+          <label for="message"><i>Message:</i></label>
+          <textarea id="message" rows="20"></textarea>
+          <div class="ui-grid-a">
+            <div class="ui-block-a">
+              <input type="submit" id="submit-btn" value="Submit"/>
+            </div>
+            <div class="ui-block-b">
+              <input type="reset" id="reset-btn" value="Reset"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div data-role="page" id="admin">
+      <div data-role="header" data-add-back-btn="true">
+        <h1>Admin: Search Data</h1>
+      </div>
+      <div role="main" class="container ui-content">
+        <div>
+          <input type="button" id="refresh-btn" value="Refresh Data"/>
+        </div>
+        <ul id="results" data-role="listview" data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true" date-input="#"></ul></ul>
+      </div>
+    </div>
+  </body>
+</html>

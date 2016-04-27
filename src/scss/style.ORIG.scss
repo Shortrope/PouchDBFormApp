@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  width: 100%;
+}
+header {
+  background: #333;
+  color: #ddd;
+  padding: 10px 0 5px;
+  border-bottom: 5px solid #000;
+  // height: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+.container {
+  // position: relative;
+  // height: (100% - 40px);
+}
+#buttons {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-btn {
+  width: 70%;
+  margin: 0 auto;
+}
+#add-btn, #admin-btn {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  font-size: 3em;
+  background-color: orange;
+  border-radius: 10px;
+}
+#add-btn {
+  margin-bottom: 30px;
+}
+@media (orientation: landscape) {
+  #buttons {
+    text-align: center;
+  }
+  .home-btn {
+    width: 40%;
+    display: inline-block;
+    margin: 0 6px;
+  }
+}
+
+
+form {
+  margin-bottom: 40px;
+  padding: 20px 0 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+label {
+  display: block;
+  margin: 10px 0;
+  i, input {
+    display: inline-block;
+  }
+  i {
+    text-align: right;
+    width: 20%;
+    margin-right: 2%;
+  }
+  input {
+    width: 77%;
+  }
+}
+input[type=submit], textarea {
+  width: 77%;
+  margin-left: 23%;
+}
+input[type=submit] {
+  height: 3em;
+  width: 38%;
+}
+textarea {
+  height: 100px;
+  position: relative;
+  top: -14px;
+}
